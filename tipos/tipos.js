@@ -1,37 +1,34 @@
 // string
-let nome = 'João';
+var nome = 'João';
 console.log(nome);
-
 // numbers
-let idade = 27
-console.log(idade)
-
+var idade = 27;
+console.log(idade);
 // boolean
-let hoobie = false
-console.log(hoobie)
-
-
+var hoobie = false;
+console.log(hoobie);
 // tipos explicitos
-let minhaIdade = 26
-console.log(typeof minhaIdade)
-
+var minhaIdade = 26;
+console.log(typeof minhaIdade);
 // array 
-let hobbies = ["Cozinhar", "Ler", "Correr"]
-console.log(hobbies[0])
-console.log(typeof hobbies)
-console.log(hobbies)
-
+var hobbies = ["Cozinhar", "Ler", "Correr"];
+console.log(hobbies[0]);
+console.log(typeof hobbies);
+console.log(hobbies);
 // tuplas
-
-let endereco = ["Rua Principal", 99]
-console.log(endereco)
-
-// enum
-
-let minhaCor = Cor.Amarelo
-console.log(minhaCor)
-
-let carro = "BMW"
-console.log(carro)
-carro = { marca: "BMW", ano: 2019}
-console.log(carro)
+var endereco = ["Rua Principal", 99];
+console.log(endereco);
+// enum - valores pré definidos
+var Cor;
+(function (Cor) {
+    Cor[Cor["Amarelo"] = 0] = "Amarelo";
+    Cor[Cor["Vermelho"] = 1] = "Vermelho";
+    Cor[Cor["Azul"] = 2] = "Azul";
+})(Cor || (Cor = {}));
+var minhaCor = Cor.Amarelo;
+console.log(minhaCor);
+// any
+var carro = "BMW";
+console.log(carro);
+carro = { marca: "BMW", ano: 2019 };
+console.log(carro);
